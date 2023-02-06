@@ -38,7 +38,9 @@ n/a
 
 ### Executing program
 
-n/a
+1. Open the project's directory
+2. Traverse: Exercise7 -> Build -> Windows -> x86
+3. Run _Exercise7_ application
 
 ## Help
 
