@@ -8,6 +8,9 @@ public class Bouncer : MonoBehaviour
     // the health of the game object
     private int health = 100;
 
+    // the opacity of the game object
+    private float opacity = 1f;
+
 
     // the rigid body 2d component of the game object
     private Rigidbody2D rb2d;
@@ -52,6 +55,11 @@ public class Bouncer : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+
+        opacity -= 0.1f;
+        sprite.color = new Color(1f, 1f, 1f, opacity);
+
         health -= 10;
     }
 }
